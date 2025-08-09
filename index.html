@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erik's Top Deals</title>
-  <script async src="https://cdn.splitbee.io/sb.js"></script>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      text-align: center;
-      padding: 20px;
-    }
-    .profile-pic {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto 15px;
-      border: 3px solid #ccc;
-    }
-    h1 {
-      font-size: 1.8em;
-      margin: 10px 0 5px;
-    }
-    p {
-      margin: 0 0 25px;
-      font-size: 1em;
-      color: #666;
-    }
-    .link-button {
-      display: block;
-      width: 90%;
-      max-width: 400px;
-      margin: 10px auto;
-      padding: 15px;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .link-button:hover {
-      background-color: #eee;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            gap: 2rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 1rem 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .card a {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.6rem 1.2rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.2s ease-in-out;
+        }
+        .card a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <img src="profile.jpg" alt="Erik's Profile Photo" class="profile-pic" />
-  <h1>Erik's Top Deals</h1>
-  <p>Curated by erik.fritz.92</p>
+    <header>Curated Watch Picks</header>
+    <div class="container">
+        
+        <div class="card">
+            <img src="https://watchdives.com/cdn/shop/files/logo_350x.png" alt="Watchdives Store">
+            <h3>Watchdives Store</h3>
+            <a href="https://watchdives.com/?ref=jxmhtcjr" target="_blank">Shop Now</a>
+        </div>
 
-  <a href="https://amzn.to/4ju1tdz" class="link-button" target="_blank">San Martin GMT Watch</a>
-  <a href="https://amzn.to/3HkUVRo" class="link-button" target="_blank">San Martin Dive Watch</a>
-  <a href="https://amzn.to/45FGuBe" class="link-button" target="_blank">Specht & Sohnne Dress Watch</a>
-  <a href="https://amzn.to/4kvOWHX" class="link-button" target="_blank">Casio F91W</a>
-  <a href="https://amzn.to/44ivmcw" class="link-button" target="_blank">G-Shock 2100</a>
-  <a href="https://amzn.to/4lcfsGp" class="link-button" target="_blank">G-Shock 5600</a>
-  <a href="https://amzn.to/4kSyrWs" class="link-button" target="_blank">Seiko GMT</a>
-  <a href="https://amzn.to/4kIestR" class="link-button" target="_blank">Seiko Presage</a>
-  <a href="https://amzn.to/45w2gaN" class="link-button" target="_blank">Citizen Dive Watch (Light Blue)</a>
-  <a href="https://amzn.to/4lfzAqS" class="link-button" target="_blank">San Martin GADA Watch</a>
-  <a href="https://watchdives.com/?ref=jxmhtcjr" class="link-button" target="_blank">Watchdives Store</a>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71p-8UPl5xL._AC_UX679_.jpg" alt="Timex Marlin">
+            <h3>Timex Marlin Watch</h3>
+            <a href="https://amzn.to/47ka28n" target="_blank">View on Amazon</a>
+        </div>
+
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/81mA8Tr1uCL._AC_UX679_.jpg" alt="Seiko 5 Field">
+            <h3>Seiko 5 Field Watch</h3>
+            <a href="https://amzn.to/45nOzsz" target="_blank">View on Amazon</a>
+        </div>
+
+    </div>
 </body>
 </html>
