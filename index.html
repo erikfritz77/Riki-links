@@ -13,17 +13,26 @@
             align-items: center;
             padding: 40px 20px;
             margin: 0;
+            color: #333;
         }
         .profile-img {
             width: 96px;
             height: 96px;
             border-radius: 50%;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
+            object-fit: cover;
+            border: 1px solid #eee;
         }
         .username {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+        .description {
+            font-size: 16px;
+            color: #666;
             margin-bottom: 32px;
+            text-align: center;
         }
         .links-container {
             width: 100%;
@@ -39,6 +48,7 @@
             margin-bottom: 16px;
             text-decoration: none;
             font-weight: 600;
+            border-radius: 8px;
             transition: all 0.2s ease;
         }
         .link-btn:hover {
@@ -49,8 +59,10 @@
 </head>
 <body>
 
-    <img src="https://github.com/erikfritz77.png" alt="Profile Picture" class="profile-img">
-    <div class="username">@erikfritz77</div>
+    <img src="https://avatars.githubusercontent.com/u/144675549?v=4" alt="Riki" class="profile-img">
+    
+    <div class="username">Riki</div>
+    <div class="description">Custom Curated Deals</div>
 
     <div class="links-container">
         <a href="https://watchdives.com/?ref=jxmhtcjr" class="link-btn" target="_blank">Watchdives Store</a>
